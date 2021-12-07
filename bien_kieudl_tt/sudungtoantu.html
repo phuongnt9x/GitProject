@@ -3,9 +3,36 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>[Thực hành] Sử dụng toán tử</title>
+	<title>[Bài tập] Biến, kiểu dữ liệu và toán tử</title>
 </head>
 <body>
-<script type="text/javascript" src="new.js"></script>
+<input type="submit" onclick="bai1()" value="Bai 1 -> Click">
+<input type="submit" onclick="bai2()" value="Bai 2 -> Click">
+<input type="submit" onclick="bai3()" value="Bai 3 -> Click">
+<input type="submit" onclick="bai4()" value="Bai 4 -> Click">
+<script>
+function bai1() {
+	let ly=prompt("Điểm môn Vật lý")
+	let hoa=prompt("Điểm môn Hóa học")
+	let sinh=prompt("Điểm môn Sinh học")
+	let tong=parseInt(ly)+parseInt(hoa)+parseInt(sinh)
+	alert("Điểm trung bình: "+(tong/3)+" Tổng: "+tong)
+}
+function bai2() {
+	let doc=prompt("Nhập độ C:")
+	let f=parseInt(doc)*9/5+32
+	alert("Độ F:"+f)
+}
+function bai3() {
+	let r=prompt("Nhập bán kinh hình tròn:")
+	let s=r*r*3.14
+	alert("Diện tích hình tròn: "+s)
+}
+function bai4() {
+	let r=prompt("Nhập bán kinh hình tròn:")
+	let c=r*2*3.14
+	alert("Chu vi hình tron: "+c)
+}
+</script>
 </body>
 </html>
