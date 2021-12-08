@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sử dụng vòng lặp while</title>
+</head>
+<body>
+	<h2>JavaScript Loops</h2>
+	<div id="bai1"></div>
+	<input type="submit"  onclick="bai1()" value="Bai1">
+	<input type="submit"  onclick="bai2()" value="Bai2">
+</body>
+<script>
+function bai1() {
+	let num = prompt("Enter a number: ");
+    let total = 0;
+    while( num != -1 ) {
+    total += parseInt(num);
+	num = prompt("Enter a number: ");
+	
+	} 
+    document.getElementById("bai1").innerHTML = "Total: "+total;
+}
+function bai2(){
+	let i = 1;
+
+	while (i < 100) {
+	    //phân thân vòng lặp
+	    document.write("<hr width = " + i + "%>");
+	    i++;
+	}
+}
+
+</script>
+</html>
