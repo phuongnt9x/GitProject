@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Tính chỉ số cân nặng của cơ thể</title>
+</head>
+<body>
+	<h2>Tính chỉ số cân nặng của cơ thể</h2>
+	<input type="submit" onclick="chisobmi()" name="Click me!!">
+
+</body>
+
+<script>
+function chisobmi(){
+let weight=prompt("Nhap chi so can nang(kg):")
+let height=prompt("Nhap chieu cao(m):")
+let bmi = weight / ( height ^2 )
+if (bmi < 18)
+    document.write("Underweight");
+else if (bmi < 25.0)
+    document.write("Normal");
+else if (bmi < 30.0)
+    document.write("Overweight");
+else
+    document.write("Obese");
+	return 0
+}
+</script>
+</html>
