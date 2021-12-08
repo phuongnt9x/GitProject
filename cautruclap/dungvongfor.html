@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sử dụng vòng lặp for</title>
+</head>
+<body>
+	<h2>JavaScript Loops</h2>
+	<div id="bai1"></div>
+	<input type="submit"  onclick="bai1()" value="Bai1">
+	<input type="submit" onclick="bai2()" value="Bai2">
+</body>
+<script>
+function bai1() {
+	let text = "";
+    let i;
+    for (i = 0; i < 5; i++) {
+        text += "The number is " + i + "<br>";
+    }
+    document.getElementById("bai1").innerHTML = text;
+}
+function bai2() {
+	let num = prompt("Enter your number: ");
+	let total = 0;
+	let i = 1;
+	for (; i <= num; i +=1) {
+		total = total + i;
+	}
+	alert("sum: "+total);
+}
+</script>
+</html>
