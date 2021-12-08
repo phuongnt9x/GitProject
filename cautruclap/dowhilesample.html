@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Sử dụng vòng lặp while</title>
+</head>
+<body>
+	<h2>JavaScript Loops</h2>
+	<div id="bai1"></div>
+	<input type="submit"  onclick="bai1()" value="Click me!">
+
+</body>
+<script>
+function bai1() {
+	let value = null;
+	do {
+    value = prompt("Nhập vào số từ 1 -> 10");
+	} while (value < 1 || value > 10);
+	alert("Số bạn vừa nhập là " + value);
+}
+
+
+</script>
+</html>
