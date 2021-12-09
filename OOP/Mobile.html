@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <title>Funny Circle</title>
+     </head>
+     <body>
+         
+     </body>
+<script>
+function Mobile(id,name,pin,ison) {
+    this.id=id
+    this.name=name
+    this.pin=pin
+    this.draft=""
+    this.inbox=""
+    this.sent=""
+    this.ison=ison
+    this.mess=""
+    this.checkon= function(){
+
+        this.pin-=1
+        return alert(this.ison)
+        
+    }
+    this.getmessage=function(){
+            if(this.ison==false){
+        alert('Ko the su dung')
+        return 0
+    }
+        this.pin-=1
+        return this.mess
+    }
+    this.setmessage=function(mess){
+        if(this.ison==false){
+        alert('Ko the su dung')
+        return 0
+    }
+        this.pin-=1
+        this.mess=mess
+        console.log(this.mess)
+    }
+    this.sentmess=function(mess,Mobile){
+            if(this.ison==false){
+        alert('Ko the su dung')
+        return 0
+    }
+        this.pin-=1
+        Mobile.setmessage(mess)
+        Mobile.setinbox(mess)
+        this.sent+="<br/>m:"+mess
+
+    }
+    this.getinbox=function(){
+            if(this.ison==false){
+        alert('Ko the su dung')
+        return 0
+    }
+        this.pin-=1
+        return alert(this.inbox)
+    }
+    this.setinbox=function(mess){
+            if(this.ison==false){
+        alert('Ko the su dung')
+        return 0
+    }
+        this.pin-=1
+        this.inbox+="m:"+mess
+    }
+
+}
+var nokia=new Mobile(1,"nokia",87,true)
+var iphone=new Mobile(2,"iphone",12,true)
+nokia.setmessage("Hello")
+nokia.sentmess(nokia.getmessage(),iphone)
+iphone.getinbox()
+</script>
+</html>
