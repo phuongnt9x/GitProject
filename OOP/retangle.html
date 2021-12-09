@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+         <title>Funny Circle</title>
+     </head>
+     <body>
+         <canvas id="myCanvas" width="1368px" height="768px" style="border:1px solid #d3d3d3;">
+     </body>
+<script>
+function Retangle(h, w){
+   this.h = h;
+   this.w = w;
+   this.area=function (){
+    return alert("area: "+h*w)
+   }
+   this.circuit= function(){
+    return alert("circuit: "+h*2+w*2)
+   }
+   this.draw= function(){
+    var ctx = document.getElementById("myCanvas").getContext("2d");
+    ctx.beginPath();
+    ctx.strokeStyle = "green";
+    ctx.rect(100, 100, this.h, this.w);
+    ctx.stroke();
+   }
+}
+var ret=new Retangle(300,200);
+ret.area()
+ret.circuit()
+ret.draw()
+
+
+</script>
+</html>
