@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hiển thị các số nguyên tố đầu tiên</title>
+</head>
+<body>
+	<h2>JavaScript Loops</h2>
+	<div id="bai1"></div>
+	<input type="submit"  onclick="bai1()" value="Click me!">
+
+</body>
+<script>
+function bai1() {
+	let numbers=parseInt(prompt("Nhap so luong so nguyen to: "))
+	let count=0
+	let N=2
+	let text=""
+	while(count<numbers){
+		if(isprime(N)){
+			text+=" "+N
+			count++
+		}
+		N++
+	}
+	let re=document.getElementById('bai1').innerHTML=text
+}
+function isprime(n){
+	if(n<2)
+		return false
+	for(let i=2;i<n;i++){
+		if(n%i==0){
+			return false
+		}
+	}
+	return true
+}
+
+</script>
+</html>
