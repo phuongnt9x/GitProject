@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> Luyện tập tạo và sử dụng hàm 01</title>
+</head>
+<body>
+	<input type="submit" value="bAI 1" onclick="alertMessage()">
+	<input type="submit" value="bAI 2" onclick="incre(prompt('nhap 1 so'))">
+<script>
+//bai 1
+function alertMessage() {
+	alert("Xin chao")
+}
+//bai2
+function incre(a){
+	a++
+	return alert(a)
+
+}
+//bai3
+function compare(b,c){
+	if(b>c)
+		return b+">"+c
+	else
+		return b+c
+}
+//bai 4
+function addNumbers() {
+    firstNum = 4;
+    secondNum = 8;
+    result = firstNum + secondNum;
+    return result;
+}
+result = 0;
+alert(result)
+result = addNumbers()
+alert(result);
+//bai 5
+let arr1=["Polaris","Aldebaran", "Deneb", "Vega", "Altair", "Dubhe","Regulus"]
+let arr2=["Ursa Minor","Tarurus", "Cygnus", "Lyra", "Aquila", " Ursa Major","Leo"]
+function findstar(star){
+	for(s of arr1){
+		if(s===star){
+			return arr2[arr1.indexOf(star)]
+		}
+	}
+	return alert("khong tim thay")
+}
+findstar(prompt("Nhap ten ngoi sao"))
+</script>
+</body>
+</html>
