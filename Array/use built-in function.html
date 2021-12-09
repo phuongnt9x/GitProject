@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sử dụng các hàm có sẵn của mảng</title>
+</head>
+<body>
+	<h2>JavaScript Loops</h2>
+	<p>array: ["Red", "Green", "White", "Black"]</p>
+	<div id="bai1"></div>
+	<input type="submit"  onclick="bai1()" value="Bai 1">
+	<div id="bai2"></div>
+	<input type="submit"  onclick="bai2()" value="Bai 2">
+	<div id="bai3"></div>
+	<input type="submit"  onclick="bai3()" value="Bai 3">
+
+</body>
+<script>
+function bai1() {
+	let myColor = ["Red", "Green", "White", "Black"];
+	document.getElementById('bai1').innerHTML=myColor.join()
+}
+function bai2(){
+	const num=window.prompt();
+	const str = num.toString();
+	const result = [str[0]];
+	  
+	for(let x=1; x<str.length; x++)
+	  {
+	    if((str[x-1]%2 === 0)&&(str[x]%2 === 0))
+	     {
+	      result.push('-', str[x]);
+	     }
+	    else
+	     {
+	      result.push(str[x]);
+	     }
+	  }
+	document.getElementById("bai2").innerHTML="Bai2" + result.join()
+}
+function bai3(){
+	var str = prompt("Nhap chuoi");
+	var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+	var result = [];
+	  
+	  for(var x=0; x<str.length; x++)
+	  {
+	    if(UPPER.indexOf(str[x]) !== -1)
+	    {
+	      result.push(str[x].toLowerCase());
+	    }
+	    else if(LOWER.indexOf(str[x]) !== -1)
+	    {
+	      result.push(str[x].toUpperCase());
+	    }
+	    else 
+	    {
+	      result.push(str[x]);
+	    }
+	  }
+	document.getElementById("bai3").innerHTML=result.join("")
+}
+</script>
+</html>
