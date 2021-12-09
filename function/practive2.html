@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Luyện tập tạo và sử dụng hàm 02</title>
+</head>
+<body>
+<p>Bai 1: n=2</p>
+<input type="submit" onclick="bai1(2)" name="bai1" value="Bai1" >
+<p>Bai 2: r=2</p>
+<input type="submit" onclick="bai2(2)" value="Bai2" >
+<p>Bai 3: n=4</p>
+<input type="submit" onclick="bai3(4)" value="Bai3" >
+<p>Bai 4: n=2</p>
+<input type="submit" onclick="bai4(2)" value="Bai4" >
+<p>Bai 5: a=2,b=6,c=3</p>
+<input type="submit" onclick="bai5(2,6,3)" value="Bai5" >
+<p>Bai 6: n=2</p>
+<input type="submit" onclick="bai6(2)" value="Bai6" >
+<p>Bai 7: a=2,b=3</p>
+<input type="submit" onclick="bai7(2,3)" value="Bai7" >
+<p>Bai 8: a=[1,2,5,1]</p>
+<input type="submit" onclick="bai8([1,2,5,1])" value="Bai8" >
+<p>Bai 9: a=[1,2,5,1],c=1</p>
+<input type="submit" onclick="bai9([1,2,5,1],1)" value="Bai9" >
+</body>
+<script>
+function bai1(n){
+	return alert(n*n)
+}
+function bai2(r){
+	let s=r*r*3.14
+	let c=r*2*3.14
+	return alert("Dien tich:"+s+"<br/>"+"Chu vi: "+c)
+}
+function bai3(n){
+	let re=1
+	for(let i=1;i<=n;i++){
+		re*=i;
+	}
+	return alert(re)
+}
+function bai4(c){
+	if (c >= '0' && c <= '9') {
+    return alert(true)
+	} else {
+    return alert(false)
+	}
+}
+function bai5(a,b,c){
+	return alert(a>b?(a>c?a:c):(b>c?b:c))
+}
+function bai6(n){
+	if(n>0){
+		return alert(true);
+	}
+	else
+		return alert(false)
+}
+function bai7(a,b){
+	let temp=a;
+	a=b;
+	b=temp;
+	return alert("a:"+a+" ,b:"+b)
+}
+function bai8(a){
+	return alert(a.reverse())
+}
+function bai9(a,c){
+	let count=0
+	for(s of a){
+		if(s==c){
+			count++
+		}
+	}
+	if(count==0)
+		return alert(-1)
+	return alert(count)
+}
+</script>
+</html>
