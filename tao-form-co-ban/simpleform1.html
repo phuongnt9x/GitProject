@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+     .wufoo {
+         font-family:  Tahoma, sans-serif;
+         margin: 10px 15%;
+         background-color: white;
+         
+     }
+     #div1{
+        text-align: center;
+        background-color: rgb(255, 76, 0);
+        font-size: 20px;
+        color: white;
+        margin: 5px;
+       
+     }
+     #form1{
+        width: 600px;
+        height: 400px;
+        background-color: rgb(213, 254, 255);
+        margin: 20px auto 15%;
+     }
+     .abc{
+        margin: 5px auto auto 20px;
+     }
+     span{
+        margin: auto 30px auto auto;
+     }
+     lable{
+        color:   rgb(255, 76, 0);
+     }
+ </style>
+	<title>[Bài tập] Tạo form đơn giản</title>
+</head>
+<body>
+<div id="form1">
+<form method="get" action="simpleform.html" class="wufoo">
+	 <div id="div1" >SỞ THÍCH CỦA BẠN</div>
+      <span style="color: blue;">Họ và tên</span>
+     <input class="abc" type = "text" name="yourname"  size="15"/> <br/>
+     <span style="color: blue;">Email</span>
+     <input class="abc" type = "text" name="email" size="15"/> <br>
+     <span style="color: blue;">Sở thích </span>
+     <lable> <input class="abc" type="checkbox" name="hobby"/> Thể thao </lable>
+     <lable> <input type="checkbox" name="hobby"/> Âm nhạc </lable>
+     <lable> <input type="checkbox" name="hobby"/> Đọc sách </lable><br/>
+     <lable> <input class="abc" type="checkbox" name="hobby"/> Lướt web </lable>
+     <lable> <input type="checkbox" name="hobby"/> Chơi game </lable>
+     <lable> <input type="checkbox" name="hobby"/> Điện ảnh </lable> <br/>
+     <lable> <input class="abc" type="checkbox" name="hobby"/> Du lịch </lable><br/>
+     
+     <input type = "submit" name="btSubmit" value="Gửi thông tin"/>
+     <input type = "reset" name="btreset" value="Nhập lại"/>
+
+</form>
+</div>
+
+
+<div id="form2">
+<form method="get" action="simpleform1.html" class="wufoo">
+    <div id="div1" >ĐĂNG KÝ HỌC VIÊN</div>
+      <span style="color: blue;">Họ và tên</span>
+     <input class="abc" type = "text" name="yourname"  size="15"/> <br/>
+     <span style="color: blue;">Ngày sinh</span>
+     <input class="abc" type = "text" name="email" size="15"/> <br>
+     <span style="color: blue;">Địa chỉ</span>
+     <input type="radio" name="gender" value="male">Nam
+     <input type="radio" name="gender" value="female">Nữ<br>
+      <span style="color: blue;">Địa chỉ</span>
+     <input class="abc" type = "text" name="yourname" height="15px"  size="25"/> <br/>
+     <span style="color: blue;">Lớp</span>
+     <select>
+      <option>-Chọn lớp-</option><br/>
+
+     </select><br>
+     <span style="color: blue;">Email</span>
+     <input class="abc" type = "text" name="email" size="15"/> <br>
+     <span style="color: blue;">Điện thoại</span>
+     <input class="abc" type = "text" name="phone" size="15"/> <br>
+     <input type = "submit" name="btSubmit" value="Đăng ký lại"/>
+     <input type = "reset" name="btreset" value="Nhập lại"/>
+
+</form>
+</div>
+</body>
+</html>
